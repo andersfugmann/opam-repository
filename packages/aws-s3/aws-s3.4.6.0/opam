@@ -12,7 +12,7 @@ build: [
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
 depends: [
-  "ocaml" {>= "4.08.0"}
+  "ocaml" {>= "4.08.0" & < "5.3.0"}
   "dune" {>= "2.0.0"}
   "ocaml-inifiles"
   "digestif" {>= "0.7"}
